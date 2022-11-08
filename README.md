@@ -3,7 +3,7 @@ All the Programs under the course <strong>[ 21-805-0306 ] Algorithms</strong> La
 
 ## Programs
 - [x] 1. [Sort a given set of elements using the Quicksort method, Determine the time required to sort the elements. Repeat the experiment for different values
-of n, the number of elements in the list to be sorted and plot a graph of the time taken versus n. The elements can be read from a file or can be generated using the random number generator.](null)
+of n, the number of elements in the list to be sorted and plot a graph of the time taken versus n. The elements can be read from a file or can be generated using the random number generator.](Lab%20Cycle%201/lc-1_q-1.cpp)
 - [ ] 2. [{Program Name}](null)
 - [ ] 3. {Program Name}
 * a . [Sub Question](null)
