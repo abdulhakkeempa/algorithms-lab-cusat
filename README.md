@@ -1,8 +1,9 @@
-# {Course_Name} Lab - CUSAT ( {Course_Semester} )
-All the Programs under the course <strong>[ {Course_Code} ] { Course_Name }</strong> Lab in Integrated M.Sc in Computer Science ( Artificial Intelligence and Data Science ) from Cochin University of Science and Technology
+# Algorithms Lab - CUSAT ( S3 )
+All the Programs under the course <strong>[ 21-805-0306 ] Algorithms</strong> Lab in Integrated M.Sc in Computer Science ( Artificial Intelligence and Data Science ) from Cochin University of Science and Technology
 
 ## Programs
-- [x] 1. [{Program Name}](null)
+- [x] 1. [Sort a given set of elements using the Quicksort method, Determine the time required to sort the elements. Repeat the experiment for different values
+of n, the number of elements in the list to be sorted and plot a graph of the time taken versus n. The elements can be read from a file or can be generated using the random number generator.](null)
 - [ ] 2. [{Program Name}](null)
 - [ ] 3. {Program Name}
 * a . [Sub Question](null)
