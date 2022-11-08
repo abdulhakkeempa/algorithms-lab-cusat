@@ -1,4 +1,8 @@
 #include <iostream>
+#include <chrono>
+
+
+using namespace std::chrono;
 using namespace std;
 
 int partition(int *data,int begin,int end);
@@ -43,8 +47,12 @@ void printArray(int* data,int length){
 }
 
 int main(){
-	int array[] = {56,98,100,23,25,101};
-	int length = sizeof(array)/sizeof(array[0]);
-    quickSort(array,0,length-1);
-    printArray(array,length);
+   int array[] = {56,98,100,23,25,101,56,98,100,23,25,101};
+   int length = sizeof(array)/sizeof(array[0]);
+   auto start = high_resolution_clock::now();
+   quickSort(array,0,length-1);
+   auto stop = high_resolution_clock::now();
+   auto duration = duration_cast<microseconds>(stop - start);
+   cout << "Time taken by function : "<< duration.count() << "microseconds";
+   printArray(array,length);
 }
