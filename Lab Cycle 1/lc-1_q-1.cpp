@@ -1,8 +1,6 @@
 #include <iostream>
-#include <chrono>
+#include <cstdlib>
 
-
-using namespace std::chrono;
 using namespace std;
 
 int partition(int *data,int begin,int end);
@@ -47,12 +45,16 @@ void printArray(int* data,int length){
 }
 
 int main(){
-   int array[] = {56,98,100,23,25,101,56,98,100,23,25,101};
+
+   int array[10];
+   for (int i = 0; i <10;i++){
+    array[i] = rand();
+   }
    int length = sizeof(array)/sizeof(array[0]);
-   auto start = high_resolution_clock::now();
+//    auto start = high_resolution_clock::now();
    quickSort(array,0,length-1);
-   auto stop = high_resolution_clock::now();
-   auto duration = duration_cast<microseconds>(stop - start);
-   cout << "Time taken by function : "<< duration.count() << "microseconds";
+//    auto stop = high_resolution_clock::now();
+//    auto duration = duration_cast<microseconds>(stop - start);
+//    cout << "Time taken by function : "<< duration.count() << "microseconds";
    printArray(array,length);
 }
