@@ -1,4 +1,5 @@
 #include <iostream>
+#include <bits/stdc++.h>
 #include <cstdlib>
 
 using namespace std;
@@ -46,15 +47,20 @@ void printArray(int* data,int length){
 
 int main(){
 
-   int array[10];
-   for (int i = 0; i <10;i++){
+   int array[20];
+   srand(time(0));
+   for (int i = 0; i <20;i++){
     array[i] = rand();
    }
+   clock_t start, end;
+   start = clock();
    int length = sizeof(array)/sizeof(array[0]);
-//    auto start = high_resolution_clock::now();
    quickSort(array,0,length-1);
-//    auto stop = high_resolution_clock::now();
-//    auto duration = duration_cast<microseconds>(stop - start);
-//    cout << "Time taken by function : "<< duration.count() << "microseconds";
+   end = clock();
+   double time_taken = double(end - start) / double(CLOCKS_PER_SEC);
+   cout << "Time taken by program is : " << fixed
+   << time_taken << setprecision(5);
+   cout << " sec " << endl;
+   cout<<endl;
    printArray(array,length);
 }
