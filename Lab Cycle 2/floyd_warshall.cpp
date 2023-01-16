@@ -43,11 +43,11 @@ int main(){
   cout<<"The Distance matrix is : "<<endl;
   for(i=0;i<num;i++){
     for(j=0;j<num;j++){
-        if (M[i][j] == INF){
-            cout<<"INF"<<"   ";
-        } else{
-            cout<< M[i][j]<<"    ";
-        }
+      if (M[i][j] == INF){
+          cout<<"INF"<<"   ";
+      } else{
+          cout<< M[i][j]<<"    ";
+      }
     }
     cout<<endl;
   }
